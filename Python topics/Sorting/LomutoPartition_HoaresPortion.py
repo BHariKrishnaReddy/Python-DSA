@@ -19,7 +19,7 @@ def lomutoPartition(arr, l, h):
     return i + 1
 
 
-def hoarePartition(arr,l,h): #not consistant
+def hoarePartition(arr,l,h): #mostly used
     pivot=arr[l]
     i=l-1
     j=h+l
