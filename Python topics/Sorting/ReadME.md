@@ -1,3 +1,30 @@
+<h1 align = 'center'>Sorting in Python</h1>
+
+* Sorting is defined as arranging data in a specific order and sorting methods are used to arrange data (usually numerical) in ascending or decreasing order. 
+* With bigger amounts of data, we want to maximize efficiency and speed. If the methods we use to sort the data are inefficient, sorting a huge amount of data can use a significant amount of computational resources. We will now go over the various sorting algorithms and compare them in terms of time complexity.
+
+
+>  sorted() 
+
+*  This method sorts the given sequence, set, and dictionary (which is not a sequence) in ascending or descending order and always returns a sorted list. The original sequence is unaffected by this procedure.
+
+    ```
+    Syntax: sorted(iteraable, key, reverse=False)
+    Return Type: Returns a sorted list. 
+    ```
+
+>  sort() 
+
+*  The sort() function is quite similar to the sorted() function, however unlike sorted, it returns nothing and modifies the original sequence. Furthermore, sort() is a list class method that can only be used with lists.
+
+    ```
+    Syntax: List_name.sort(key, reverse=False)
+    Return Type: None 
+    ```
+
+
+
+
 #### Bubble Sort
 * Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
 
@@ -51,7 +78,3 @@
         * The heapify procedure calls itself recursively to build heap
         in top down manner.
     3. Repeat above steps while size of heap is greater than 1.
- 
-
-
-
