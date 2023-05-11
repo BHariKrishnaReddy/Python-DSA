@@ -28,7 +28,6 @@
 * Finally, when both halves are sorted, the merge operation is applied. Merge operation is the process of taking two smaller sorted arrays and combining them to eventually make a larger one.
 
 
-
 #### Quick Sort
 * Lomuto’s Partition Scheme:
 
@@ -38,6 +37,20 @@
 
     Hoare’s Partition Scheme works by initializing two indexes that start at two ends, the two indexes move toward each other until an inversion is (A smaller value on the left side and greater value on the right side) found. When an inversion is found, two values are swapped and the process is repeated.
 
+#### Heap Sort
+
+* Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining elements.
+
+* Binary Heap is a Complete Binary Tree, it can be easily represented as array and array based representation is space efficient. If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and right child by 2 * I + 2 (assuming the indexing starts at 0).
+
+* Heap Sort Algorithm for sorting an array in increasing order:
+
+    1. Build a max heap from the input data.
+    2. At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing  the size of heap by 1. Finally, heapify the root of tree.
+        * Heapify procedure can be applied to a node only if its children nodes are heapified. So the heapification must be performed in the bottom up order.
+        * The heapify procedure calls itself recursively to build heap
+        in top down manner.
+    3. Repeat above steps while size of heap is greater than 1.
  
 
 
